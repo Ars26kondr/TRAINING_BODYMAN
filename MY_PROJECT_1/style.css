@@ -1,0 +1,12 @@
+body{
+    background-color: #050505;
+}
+.home{
+    display:flex;
+    align-items: center;
+}
+.Citata{
+    font-size: 50px;
+    color: #ececec;
+    font-family: 'Open Sans', sans-serif;
+}
