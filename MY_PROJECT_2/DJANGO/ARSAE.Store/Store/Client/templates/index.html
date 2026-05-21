@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resident Evil 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -17,15 +18,15 @@
         <p>Магазин</p>
         <p>Поддержка</p>
         <div class="pictures">
-        <img src="../IMG/heart.png" alt="" class="glava">
-        <img src="../IMG/cart.png" alt="" class="glava">
-        <img src="../IMG/search.png" alt="" class="glava">
+        <img src="{% static 'img/heart.png' %}" alt="" class="glava">
+        <img src="{% static 'img/cart.png' %}" alt="" class="glava">
+        <img src="{% static 'img/search.png' %}" alt="" class="glava">
         </div>
     </header>
     <div class="site">
         <div class="second">
             <div class="next">
-            <img src="../IMG/shopbag.png" alt="" class="glava">
+            <img src="{% static 'img/shopbag.png' %}" alt="" class="glava">
             <p></p>ARSAE.Store</p>
             </div>
             <div class="news">
@@ -47,11 +48,11 @@
                 </div>
                 <div class="big">
                     4.78
-                    <img src="../IMG/star.png" alt="" class="otzeuv">
-                    <img src="../IMG/star.png" alt="" class="otzeuv">
-                    <img src="../IMG/star.png" alt="" class="otzeuv">
-                    <img src="../IMG/star.png" alt="" class="otzeuv">
-                    <img src="../IMG/star.png" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
                     10тыс. отзывов
                 </div>
             </div>
