@@ -1,31 +1,23 @@
-/* @font-face{
-    font-family: "Sony";
-    src: url(/TRAINING_BODYMAN/FONTS/sst/SSTMedium.TTF); */
-/* } */
 body{
     background-color: black;
     color: white;
     font-family:'Verdana';
-    margin: 0;
+    font-stretch: condensed;
+    margin: 0px;
 }
 header{
     background-color: white;
-    color: rgb(138, 138, 138);
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 .pictures{
-    margin-left: 700px;
+    margin-left: 390px;
 }
-.site{
-    background: url(../IMG/RE2.png);
-    background-repeat:no-repeat;
-    background-size: 30% 119%;
-    background-position: 75% 0;
-    }
+
 .glava{
     height: 0.8cm;
+    margin-right: 8px;
 }
 .second{
     background-color: white;
@@ -35,9 +27,9 @@ header{
     align-items: center;
 }
 .next{
+    margin-right: 400px;
     display: flex;
     align-items: center;
-    margin-right: 400px;
 }
 .news{
       display: flex;
@@ -46,6 +38,7 @@ header{
     margin-right: 20px;
 }
 .main{
+    margin-top: 30px;
     margin-left: 40px;
     display: flex;
     justify-content: flex-start;
@@ -61,15 +54,16 @@ header{
     color: #989898
 }
 .price{
-    background-color: #1F2024;
-    width: 30%;
-    margin-top: 40px;
+    background: linear-gradient( to right,#1f2024, #414249);
     margin-left: 40px;
+    width: 30%;
 }
 .console{
     display: flex;
+    align-items: center;
 }
-.console p{
+.console1{
+    margin-left: 7.5px;
     border: 1px white solid;
 }
 .ps{
@@ -89,9 +83,30 @@ fieldset{
     font-size: 21px;
 }
 .sub{
+    background-color: #d63d00;
+    border-radius: 20px;
+    height: 35px;
+    width: 200px;
+    margin-left: 120px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-/* .games{
-    font-family: "Sony";
-} */
+.sub:hover{
+    background-color: #bc3500;
+}
+.noline1{
+    color: rgb(138, 138, 138);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.noline1:hover{
+    color:  rgb(56, 81, 190);
+}
+.noline{
+    color: rgb(138, 138, 138);
+    text-decoration: none;
+}
+.noline:hover{
+    color:  rgb(56, 81, 190);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ game.Name }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Main_page.css' %}">
+</head>
+
+<body>
+    {% include 'header.html' %}
+    <div class="site" style="background: url({{game.Icon.url}}); 
+    background-size: cover;
+    background-repeat:no-repeat; 
+    margin-top: -30px;
+    background-position: 65% 0;
+    height: 675px; ">
+        <div class="price">
+            <div class="main">
+                <p class="Massive">{{ game.Name }}</p>
+                <p>{{ game.Creator }}</p>
+                <div class="console">
+                    <a>Available on</a>
+                    <a class="console1">{{ game.Platforms }}</a>
+                    <p class="ps"></p>
+                </div>
+                <div class="big">
+                    {{ game.Rating }}
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
+                    10тыс. отзывов
+                </div>
+            </div>
+            <fieldset>
+                {% if game.Subscription %}
+                <div class="c">
+                    <input type="radio" id="subscribe">
+                    <label for="subscribe">
+                        <div>
+                            <p class="big">Включено <s class="notincluded">₽{{ game.Price }}</s></p>
+                            <p class="Psplus">Подписка на PlayStation PLus Deluxe для активации игр и т.д.</p>
+                        </div>
+                    </label>
+                </div>
+                {% endif %}
+                <div class="c">
+                    <input type="radio" id="buy">
+                    <label for="buy">
+                        <div>
+                            {% if game.Discount > 0  %}
+                            <p class="big">₽{{ game.GetSalePrice }} <s class="notincluded">₽{{ game.Price }}</s></p>
+                            {% else %}
+                            <p class="big">₽{{ game.Price }}</p>
+                            {% endif %}
+                        </div>
+                        <div>
+                            {% if game.Discount > 0  %}
+                            <p>Сохраняет {{ game.Discount}}% Услуга истекает 27/6/2026 08:59 GMT+10</p>
+                            <p>Низкие цены за последние 30 дней: ₽{{ game.GetSalePrice }}</p>
+                            {% endif %}
+                        </div>
+                    </label>
+                </div>
+            </fieldset>
+            <div>
+                <p class="sub">Подписка</p>
+                <img src="" alt="">
+            </div>
+        </div>
+        <div>
+            <footer></footer>
+</body>
+
+</html>

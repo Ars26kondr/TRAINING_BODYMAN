@@ -1,11 +1,8 @@
-/* @font-face{
-    font-family: "Sony";
-    src: url(/TRAINING_BODYMAN/FONTS/sst/SSTMedium.TTF); */
-/* } */
 body{
     background-color: black;
     color: white;
-    font-family:'Verdana'
+    font-family:'Verdana';
+    margin: -8px;
 }
 header{
     background-color: white;
@@ -91,6 +88,3 @@ fieldset{
     display: flex;
     justify-content: center;
 }
-/* .games{
-    font-family: "Sony";
-} */

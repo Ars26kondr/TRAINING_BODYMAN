@@ -17,9 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Client import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
+    path('', views.index, name="index"),
+    path('RE2/<int:id>', views.RE2, name="RE2"),
+    path('acsories', views.acsories, name="acsories"),
+    path('search_results', views.search_results, name="search_results"),
     ]
 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

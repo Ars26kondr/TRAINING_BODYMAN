@@ -1,91 +1,24 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resident Evil 2</title>
+    <title>ARSAE.Store - Главная Страница</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Main_page.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/Arsae.png' %}" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <p>Игры</p>
-        <p>Книги</p>
-        <p>Аксессуары</p>
-        <p>Новости</p>
-        <p>Магазин</p>
-        <p>Поддержка</p>
-        <div class="pictures">
-        <img src="{% static 'img/heart.png' %}" alt="" class="glava">
-        <img src="{% static 'img/cart.png' %}" alt="" class="glava">
-        <img src="{% static 'img/search.png' %}" alt="" class="glava">
-        </div>
-    </header>
-    <div class="site">
-        <div class="second">
-            <div class="next">
-            <img src="{% static 'img/shopbag.png' %}" alt="" class="glava">
-            <p></p>ARSAE.Store</p>
+    {% include 'header.html' %}
+    <div>
+        {% include 'banner.html' with info=banner %}
+            <p class="fivegame">Топ 5 лучших игр в вашей стране</p>
+            <div class="RE2_FULL">
+                {% for i in Game %}
+                {% include 'goods.html' with Game=i %}
+                {% endfor %}
             </div>
-            <div class="news">
-            <p>Новейшие</p>
-            <p>Коллекции</p>
-            <p>Сделки</p>
-            <p>Подписки</p>
-            <p>Консультанты</p>
-            </div>
-        </div>
-        <div class="price">
-            <div class="main">
-                <p class="Massive">Resident Evil 2</p>
-                <p>Moonrise Labels.</p>
-                <div class="console">
-                    <p>XBOX</p>
-                    <p class="ps">PS4</p>
-                    <p class="ps">PS5</p>
-                </div>
-                <div class="big">
-                    4.78
-                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
-                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
-                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
-                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
-                    <img src="{% static 'img/star.png' %}" alt="" class="otzeuv">
-                    10тыс. отзывов
-                </div>
-            </div>
-            <fieldset>
-                <div class="c">
-                    <input type="radio" id="subscribe">
-                    <label for="subscribe">
-                        <div>
-                            <p class="big">Включено <s class="notincluded">719,00 RUS</s></p>
-                            <p class="Psplus">Подписка на PlayStation PLus Deluxe для активации игр и т.д.</p>
-                        </div>
-                    </label>
-                </div>
-                <div class="c">
-                    <input type="radio" id="buy">
-                    <label for="buy">
-                        <div>
-                            <p class="big">249,00 RUS <s class="notincluded">719,00 RUB</s></p>
-                        </div>
-                        <div>
-                        <p>Сохраняет 50% Услуга истекает 23/4/2026 08:59 GMT+10</p>
-                        <p>Низкие цены за последние 30 дней: 479,00 RUS</p>
-                        </div>
-                    </label>
-                </div>
-            </fieldset>
-            <div>
-                <p class="sub">Подписка</p>
-                <img src="" alt="">
-            </div>
-        </div>
-        <div>
-            <footer></footer>
+    </div>
 </body>
 
 </html>

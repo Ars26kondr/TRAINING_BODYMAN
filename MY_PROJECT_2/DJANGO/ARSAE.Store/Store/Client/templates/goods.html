@@ -1,0 +1,10 @@
+{% load static %}
+<div class="Gamesinfo">
+    <div class="underli">
+        <div>
+            <img src="{{Game.Icon.url}}" alt="" class="re2">
+        </div>
+        <a class="re2_name" href="{% url 'RE2' Game.id %}">{{Game.Name}}</a>
+    </div>
+    <p class="price1">₽{{Game.Price}}</p>
+</div>

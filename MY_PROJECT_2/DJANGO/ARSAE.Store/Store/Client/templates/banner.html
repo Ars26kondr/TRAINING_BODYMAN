@@ -1,0 +1,11 @@
+{% load static %}
+<div class="banner">
+    <img src="{% static 'img/Batman.png' %}" alt="" class="lego">
+</div>
+<div class="batman">
+    <div>
+        <p class="Legacy">{{info.Name}}</p>
+        <p class="creator">{{info.Creator}}</p>
+    </div>
+    <a href="{% url 'RE2' id=1 %}" class="buy">Приобрести</a>
+</div>

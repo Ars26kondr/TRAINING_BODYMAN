@@ -1,0 +1,32 @@
+{% load static %}
+<header>
+    <p class="noline1">Игры</p>
+    <p class="noline">Книги</p>
+    <a href="{% url 'acsories' %}" class="noline">Аксессуары</a>
+    <p class="noline">Новости</p>
+    <p class="noline">Магазин</p>
+    <p class="noline">Поддержка</p>
+    <form method="get" action="{% url 'search_results' %}" class="poiskcombined">
+        <input type="search" name="A" placeholder="Search ARSAE.Store" class="poisk">
+        <button type="submit" class="poiskborder">
+            <img src="{% static 'img/search.png' %}" alt="" class="poiskicon">
+        </button>
+    </form>
+    <div class="pictures">
+        <img src="{% static 'img/heart.png' %}" alt="" class="glava">
+        <img src="{% static 'img/cart.png' %}" alt="" class="glava">
+    </div>
+</header>
+<div class="second">
+    <div class="next">
+        <img src="{% static 'img/shopbag.png' %}" alt="" class="glava">
+        <a>ARSAE.Store</a>
+    </div>
+    <div class="news">
+        <p class="noline2">Новейшие</p>
+        <p class="noline2">Коллекции</p>
+        <p class="noline2">Сделки</p>
+        <p class="noline2">Подписки</p>
+        <p class="noline2">Консультанты</p>
+    </div>
+</div>

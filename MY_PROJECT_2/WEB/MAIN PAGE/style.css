@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(245, 245, 245);
+    font-family:'Verdana';
+}
+.banner{
+    background: url(Banner.png);
+    height: 400px;
+    background-size: cover;
+    background-position-y: 55%;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.lego{
+    height: 350px;
+    margin-left: 300px;
+}
+.Legacy{
+    font-size: 27px;
+    color: rgb(51, 51, 51);
+    margin-left: 20px;
+    margin-top: 0px;
+    padding: 40px;
+}
+.creator{
+    color: rgb(124, 124, 124);
+    margin-left: 60px;
+}
+.batman{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.buy{
+    background-color: rgb(56, 81, 190);
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17.5px;
+    margin-right: 80px;
+}
+.buy:hover{
+    background-color: rgb(31, 47, 119);
+}
+.rdr_name{
+    margin-left: 60px;
+    font-size: 20px;
+}
+.rdr2{
+    border-radius: 12.5px;
+    height: 225px;
+    margin-left: 60px;
+}
+.fivegame{
+    font-size: 27px;
+    margin-left: 60px;
+}
+.price1{
+    margin-left: 60px;
+    color: rgb(32, 32, 32);
+}

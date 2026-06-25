@@ -1,0 +1,75 @@
+body{
+    background: rgb(245, 245, 245);
+    font-family:'Verdana';
+}
+.PC{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px 1px rgb(191, 191, 191);
+}
+.RTX{
+    height: 200px;
+}
+.ar{
+    display: flex;
+    align-items: center;
+}
+.radius{
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+.next{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-left: 1%;
+}
+.next2{
+    margin-left: 50px;
+}
+.need{
+    height: 17.5px;
+}
+.blue{ 
+    color: rgb(0, 153, 255);
+    margin-left: 5px;
+}
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purchase{
+    background-color: rgb(240, 240, 240);
+    height: 35px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.sale{
+    color: rgb(79, 219, 79);
+    background-color: rgba(185, 250, 185, 0.6);
+    border-radius: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.purchase:hover{
+    background-color: orange;
+    color: white;
+}
