@@ -1,0 +1,7 @@
+{% load static %}
+<!--Карточка товара-->
+<div class="product_all">
+    <img src="{{ product.image.url }}" alt="">
+    <p class="product_name">{{ product.name }}</p>
+    <button class="product_button">Buy ${{ product.price }}</button>
+</div>

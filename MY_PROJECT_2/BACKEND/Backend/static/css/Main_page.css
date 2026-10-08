@@ -1,0 +1,167 @@
+body{
+    background-color:white;
+    font-family:'Avenir';
+    font-weight:500;
+    margin:0;
+}
+.header{
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55) 50%, rgba(255, 255, 255, 0));
+    backdrop-filter:blur(5px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+    height:110px;
+}
+.header p{
+    line-height:40px;
+}
+.header p:hover{
+    color:white;
+}
+.A{
+    background:url(../images/carbanner1.webp);
+    background-size:cover;
+    background-position-x:center;
+    background-repeat:no-repeat;
+    height:700px;
+}
+.Search-Hover{
+    height:40px;
+    width:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.Search-Icon{
+    background:url(../shortcuts/Menu1.svg);
+    width:20px;
+    height:20px;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+.MenuBack:hover {
+    width: 50px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.MenuBack:hover .Menu {
+    width: 20px;
+    height: 20px;
+    background: url(../shortcuts/Menu2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+/* .Banner {
+    background: url(../images/carbanner1.png);
+    height: 305px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px -2px;
+}
+
+.redback {
+    height: 1000px;
+}
+
+.Goods {
+    background-color: rgb(26, 0, 0);
+    height: 200px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    border: 1.5px solid rgb(66, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Goods p {
+    color: white;
+}
+
+.textsearch1 {
+    margin-left: 70px;
+    background: linear-gradient(180deg, rgb(186, 23, 23) 10%, rgb(171, 23, 23) 47%);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search1 {
+    margin-left: 10px;
+}
+.Logo {
+    height: 47px;
+    margin-left: 63px;
+    margin-top: 30px;
+}
+
+.ProfileBack {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile {
+    height: 20px;
+    width: 20px;
+    background: url(../shortcuts/Profile1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ProfileBack:hover {
+    width: 100px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.ProfileBack:hover .Profile {
+    background: url(../shortcuts/Profile2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.BagBack {
+    height: 40px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.Bag {
+    width: 20px;
+    height: 20px;
+    background: url(../shortcuts/Bag1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.BagBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.BagBack:hover .Bag {
+    width: 20px;
+    height: 20px;
+    background: url(../shortcuts/Bag2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+} */

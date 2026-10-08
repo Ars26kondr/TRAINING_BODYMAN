@@ -1,0 +1,41 @@
+{% load static %}
+<header>
+    <div class="header_main">
+        <div class="header_catalog">
+            <a href="" class="header_catalog_sign">Каталог</a>
+        </div>
+        <div class="header_service">
+            <a href="" class="header_service_sign">Сервис</a>
+        </div>
+        <div class="header_company">
+            <img src="" alt="">
+            <a class="logo" href="{% url 'main_page' %}">
+                <span class="logo_accent1">DIESEL</span><span class="logo_accent2">STORE</span>
+            </a>
+        </div>
+        <div>
+            <form method="get" action="{% url 'search_results' %}" class="search_combined">
+                <input type="search" name="A" placeholder="Search_TNVD" class="search">
+                <button type="submit" class="search_border">Поиск</button>
+            </form>
+        </div>
+        <div class="header_user_actions">
+            {% if user.is_authenticated %}
+            <a href="{% url 'profile' %}" class="action-item" title="Личный кабинет">
+                👤 {{ user.username|truncatechars:10 }}
+            </a>
+            {% else %}
+            <a class="action-item" title="Войти" href="">
+                👤
+            </a>
+            {% endif %}
+
+            <a href="{% url 'shop' %}" class="action-item cart-btn" title="Корзина">
+                🛒 <span class="cart-label"></span>
+                {% if cart_count %}
+                <span class="badge">{{ cart_count }}</span>
+                {% endif %}
+            </a>
+        </div>
+    </div>
+</header>

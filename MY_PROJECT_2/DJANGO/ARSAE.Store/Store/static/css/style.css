@@ -1,88 +1,107 @@
-body{
+body {
     background-color: black;
     color: white;
-    font-family:'Verdana';
+    font-family: 'Verdana';
     font-stretch: condensed;
     margin: 0px;
 }
-header{
+
+header {
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pictures{
+
+.pictures {
     margin-left: 390px;
 }
 
-.glava{
+.glava {
     height: 0.8cm;
     margin-right: 8px;
 }
-.second{
+
+.second {
     background-color: white;
     color: black;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.next{
+
+.next {
     margin-right: 400px;
     display: flex;
     align-items: center;
 }
-.news{
-      display: flex;
+
+.news {
+    display: flex;
 }
-.news p{
+
+.news p {
     margin-right: 20px;
 }
-.main{
+
+.main {
     margin-top: 30px;
     margin-left: 40px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
-.otzeuv{
+
+.otzeuv {
     height: 15px;
 }
-.Psplus{
+
+.Psplus {
     color: #f4d10a
 }
-.notincluded{
+
+.notincluded {
     color: #989898
 }
-.price{
-    background: linear-gradient( to right,#1f2024, #414249);
+
+.price {
+    background: linear-gradient(to right, #1f2024, #414249);
     margin-left: 40px;
     width: 30%;
 }
-.console{
+
+.console {
     display: flex;
     align-items: center;
 }
-.console1{
+
+.console1 {
     margin-left: 7.5px;
     border: 1px white solid;
 }
-.ps{
+
+.ps {
     margin-left: 5px;
 }
-fieldset{
-    border:none;
+
+fieldset {
+    border: none;
 }
-.c{
+
+.c {
     display: flex;
     align-items: baseline;
 }
-.Massive{
+
+.Massive {
     font-size: 40px;
 }
-.big{
+
+.big {
     font-size: 21px;
 }
-.sub{
+
+.sub {
     background-color: #d63d00;
     border-radius: 20px;
     height: 35px;
@@ -92,21 +111,26 @@ fieldset{
     justify-content: center;
     align-items: center;
 }
-.sub:hover{
+
+.sub:hover {
     background-color: #bc3500;
 }
-.noline1{
+
+.noline1 {
     color: rgb(138, 138, 138);
     text-decoration: none;
     margin-left: 10px;
 }
-.noline1:hover{
-    color:  rgb(56, 81, 190);
+
+.noline1:hover {
+    color: rgb(56, 81, 190);
 }
-.noline{
+
+.noline {
     color: rgb(138, 138, 138);
     text-decoration: none;
 }
-.noline:hover{
-    color:  rgb(56, 81, 190);
+
+.noline:hover {
+    color: rgb(56, 81, 190);
 }

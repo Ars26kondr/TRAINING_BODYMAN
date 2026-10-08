@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Speed L">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+    <link rel="shortcut icon" href="{% static 'shortcuts/logo.svg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+
+<body>
+    {% include 'header.html' %}
+    
+    <div class="swiper swiper-styles">
+        <div class="swiper-wrapper">
+            {% for i in slides %}
+                <div class="swiper-slide">
+                    <img src="{{ i.image.url }}" alt="">
+                    <p class="swiper_title">{{ i.title }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    {% include 'service.html' %}
+
+    <div class="products_together">
+        {% for product in products %}
+        {% include 'goods.html' with  products=product %}
+        {% endfor %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <div class="contacts_map">
+        <div class="footer_contancts">
+            <h3>Контакты</h3>
+            <a href="tel:+79147038222" class="footer_phone">+7 (914) 703-82-22</a>
+            <a href="mailto:zexel30@mail.ru" class="footer_email">zexel30@mail.ru</a>
+            <p class="footer-address">г. Владивосток, ул. Снеговая, 12</p>
+            <div class="social_links">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.513564080488!2d131.93316717600652!3d43.135743885744766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb39236802c0703%3A0xa2e199e384dd4cf1!2z0JTQuNCw0LPQvdC-0YHRgtC40YfQtdGB0LrQuNC5INCm0LXQvdGC0YAg0KLQvdCy0LQ!5e0!3m2!1sru!2sru!4v1790680215247!5m2!1sru!2sru" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+
+</html>

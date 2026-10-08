@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+</head>
+<body>
+    <div class="chat">
+        <img src="/static/shortcuts/chat.png" alt="">
+        <div class="messages"></div>
+        <form method="get" action="{% url 'search_results' %}" class="chat_field">
+            <input type="text" name="B" placeholder="Введите ваш запрос" class="chat_text">
+            <button type="submit" class="chat_button">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>

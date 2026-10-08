@@ -52,14 +52,14 @@
                     <input type="radio" id="buy">
                     <label for="buy">
                         <div>
-                            {% if game.Discount > 0  %}
+                            {% if game.Discount > 0 %}
                             <p class="big">₽{{ game.GetSalePrice }} <s class="notincluded">₽{{ game.Price }}</s></p>
                             {% else %}
                             <p class="big">₽{{ game.Price }}</p>
                             {% endif %}
                         </div>
                         <div>
-                            {% if game.Discount > 0  %}
+                            {% if game.Discount > 0 %}
                             <p>Сохраняет {{ game.Discount}}% Услуга истекает 27/6/2026 08:59 GMT+10</p>
                             <p>Низкие цены за последние 30 дней: ₽{{ game.GetSalePrice }}</p>
                             {% endif %}

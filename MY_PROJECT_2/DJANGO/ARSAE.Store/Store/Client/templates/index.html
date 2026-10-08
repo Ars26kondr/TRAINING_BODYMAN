@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="{% static 'css/Main_page.css' %}">
     <link rel="shortcut icon" href="{% static 'img/Arsae.png' %}" type="image/x-icon">
 </head>
+
 <body>
     {% include 'header.html' %}
     <div>
         {% include 'banner.html' with info=banner %}
-            <p class="fivegame">Топ 5 лучших игр в вашей стране</p>
-            <div class="RE2_FULL">
-                {% for i in Game %}
-                {% include 'goods.html' with Game=i %}
-                {% endfor %}
-            </div>
+        <p class="fivegame">Топ 5 лучших игр в вашей стране</p>
+        <div class="RE2_FULL">
+            {% for i in Game %}
+            {% include 'goods.html' with Game=i %}
+            {% endfor %}
+        </div>
     </div>
 </body>
 
